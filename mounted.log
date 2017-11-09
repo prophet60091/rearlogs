@@ -1,0 +1,1421 @@
+2017-11-09 08:28:25.881195457 Relax-and-Recover 2.2-git.0.0.unknown / 2017-10-30
+2017-11-09 08:28:25.882523546 Command line options: /usr/sbin/rear -d -D mkbackup
+2017-11-09 08:28:25.883651950 Using log file: /var/log/rear/rear-localhost.log
+2017-11-09 08:28:25.885385570 Current set of flags is 'hB'
+2017-11-09 08:28:25.886795073 The debugscripts flags are 'x'
+2017-11-09 08:28:25.888307812 Combining configuration files
+2017-11-09 08:28:25.889685723 Including /etc/rear/os.conf
+2017-11-09 08:28:25.890890454 Entering debugscripts mode via 'set -x'.
++ source /etc/rear/os.conf
+++ OS_VENDOR=RedHatEnterpriseServer
+++ OS_VERSION=7
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.894617206 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.894617206 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.894617206 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.898228375 Including conf/Linux-i386.conf
+2017-11-09 08:28:25.899538336 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/conf/Linux-i386.conf
+++ REQUIRED_PROGS=("${REQUIRED_PROGS[@]:-}" parted sfdisk)
+++ PROGS=("${PROGS[@]:-}" grub partprobe lilo fdisk cfdisk)
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.903595894 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.903595894 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.903595894 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.905889614 Including conf/GNU/Linux.conf
+2017-11-09 08:28:25.907229538 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/conf/GNU/Linux.conf
+++ PROGS=(${PROGS[@]:-} rpc.statd rpcbind bash mknod blkid vol_id udev_volume_id portmap readlink rpcinfo grep cat tac tr reboot halt shutdown killall5 killall chroot tee awk ip ifconfig nslookup route ifenslave ifrename nameif klogd syslog-ng syslogd rsyslogd echo cp date wc cut rm rmdir test init telinit ethtool expand sed mount umount insmod modprobe lsmod true false mingetty agetty getty rmmod hostname uname sleep logger ps ln dirname basename mkdir tty ping netstat free traceroute less vi pico nano rmmod df ls dmesg du tar gzip netcat curl top iptraf joe getent id ldd strace rsync tail head find md5sum mkfs mkfs.ext2 mkfs.ext3 mkfs.ext4 mkfs.ext4dev mkfs.jfs mkfs.xfs mkfs.reiserfs mkfs.vfat mkfs.btrfs mkreiserfs fsck fsck.ext2 fsck.ext3 fsck.ext4 fsck.ext4dev fsck.xfs fsck.reiserfs reiserfsck fsck.btrfs findmnt btrfsck tune2fs tune4fs xfs_admin xfs_db xfs_repair xfs_info xfs_growfs btrfs jfs_tune reiserfstune expr egrep grep fgrep chmod chown stat mkswap swapon swapoff mknod touch scsi_id lsscsi logd initctl lspci usleep mktemp /bin/true strace which mkfifo seq openvt poweroff chacl getfacl setfacl attr getfattr setfattr mpath_wait strings xargs sg_inq env w dosfslabel sysctl)
+++ LIBS=(${LIBS[@]:-} /lib*/libnss_dns* /lib*/libnss_files* /lib/*/libnss_dns* /lib/*/libnss_files* /lib*/libgcc_s* /lib*/libresolv* /usr/lib*/rsyslog/*so /lib*/rsyslog/*so /usr/lib*/syslog-ng/* /lib*/libnsspem.so* /usr/lib*/libnsspem.so* /lib*/libfreebl*.so* /usr/lib*/libfreebl*.so* /lib*/libnss3.so* /usr/lib*/libnss3.so* /lib*/libnssutil3.so* /usr/lib*/libnssutil3.so* /lib*/libsoftokn3.so* /usr/lib*/libsoftokn3.so* /lib*/libsqlite3.so* /usr/lib*/libsqlite3.so* /lib*/libfreeblpriv3.so* /usr/lib*/libfreeblpriv3.so* /lib*/libssl.so* /usr/lib*/libssl.so* /lib*/libnssdbm3.so* /usr/lib*/libnssdbm3.so*)
+++ MODULES=(${MODULES[@]:-} vfat nls_iso8859_1 nls_utf8 nls_cp437 af_packet unix nfs nfsv4 nfsv3 lockd sunrpc cifs usbcore usb_storage usbhid sr_mod ide_cd cdrom uhci_hcd ehci_hcd xhci_hcd ohci_hcd zlib zlib-inflate zlib-deflate libcrc32c crc32c crc32c-intel)
+++ COPY_AS_IS=(${COPY_AS_IS[@]:-} /dev /etc/inputr[c] /etc/protocols /etc/services /etc/rpc /etc/termcap /etc/terminfo /lib*/terminfo /usr/share/terminfo /etc/netconfig /etc/mke2fs.conf /etc/*-release /etc/localtime /etc/magic /usr/share/misc/magic /etc/dracut.conf /etc/dracut.conf.d /usr/lib/dracut /sbin/modprobe.ksplice-orig /etc/sysctl.conf /etc/sysctl.d /etc/e2fsck.conf)
+++ COPY_AS_IS=("${COPY_AS_IS[@]}" '/etc/ssl/certs/*' '/etc/pki/*' '/usr/lib/ssl/*' '/usr/share/ca-certificates/*')
+++ COPY_AS_IS_EXCLUDE=(${COPY_AS_IS_EXCLUDE[@]:-} dev/shm/\*)
+++ COPY_AS_IS_EXCLUDE=("${COPY_AS_IS_EXCLUDE[@]}" '/etc/pki/tls/private' '/etc/pki/CA/private' '/etc/pki/nssdb/key*.db' '/usr/lib/ssl/private')
+++ KERNEL_CMDLINE=' selinux=0'
+++ CLONE_USERS=("${CLONE_USERS[@]:-}" daemon rpc usbmuxd usbmux vcsa nobody)
+++ CLONE_GROUPS=("${CLONE_GROUPS[@]:-}" tty usbmuxd usbmux fuse kvm oinstall)
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.923138676 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.923138676 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.923138676 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.924656460 Including /etc/rear/site.conf
+2017-11-09 08:28:25.925453163 Entering debugscripts mode via 'set -x'.
++ source /etc/rear/site.conf
+++ OUTPUT=USB
+++ OUTPUT_URL=null
+++ export TMPDIR=/home/backup/tmp
+++ TMPDIR=/home/backup/tmp
+++ BACKUP=NETFS
+++ BACKUP_PROG=rsync
+++ BACKUP_URL=usb:///dev/sdb2
+++ USB_DEVICE_FILESYSTEM=ext4
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.928322639 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.928322639 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.928322639 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.930746928 ======================
+2017-11-09 08:28:25.931511426 Running 'init' stage
+2017-11-09 08:28:25.932223863 ======================
+2017-11-09 08:28:25.935368183 Including init/default/010_set_drlm_env.sh
+2017-11-09 08:28:25.936352347 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/init/default/010_set_drlm_env.sh
+++ is_true n
+++ case "$1" in
+++ return 1
+++ return 0
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.939686872 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.939686872 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.939686872 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.941141514 Including init/default/030_update_recovery_system.sh
+2017-11-09 08:28:25.941927661 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/init/default/030_update_recovery_system.sh
+++ test ''
+++ return
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.944791680 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.944791680 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.944791680 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.946069533 Including init/default/050_check_rear_recover_mode.sh
+2017-11-09 08:28:25.946894637 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/init/default/050_check_rear_recover_mode.sh
+++ test -f /etc/rear-release
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.949765848 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.949765848 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.949765848 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.951024206 Finished running 'init' stage in 0 seconds
+2017-11-09 08:28:25.955788464 Using build area '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO'
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs'
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/tmp'
+2017-11-09 08:28:25.958051013 Running mkbackup workflow
+2017-11-09 08:28:25.960045843 ======================
+2017-11-09 08:28:25.960721769 Running 'prep' stage
+2017-11-09 08:28:25.961433588 ======================
+2017-11-09 08:28:25.964414223 Including prep/default/005_remove_workflow_conf.sh
+2017-11-09 08:28:25.965088646 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/default/005_remove_workflow_conf.sh
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/etc/rear
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/etc'
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/etc/rear'
+++ rm -f -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/etc/rear/rescue.conf
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.968931123 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.968931123 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.968931123 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.970208829 Including prep/default/020_translate_url.sh
+2017-11-09 08:28:25.970911250 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/default/020_translate_url.sh
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -n '' ]]
+++ [[ -z '' ]]
+++ [[ -z null ]]
+++ [[ -z null ]]
+++ [[ -z '' ]]
+++ [[ -z null ]]
+++ [[ -z '' ]]
+++ [[ -z null ]]
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.973748624 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.973748624 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.973748624 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.975022160 Including prep/default/030_translate_tape.sh
+2017-11-09 08:28:25.975761265 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/default/030_translate_tape.sh
+++ [[ -n usb:///dev/sdb2 ]]
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
+++ backup_scheme=usb
+++ [[ usb == tape ]]
+++ [[ usb == obdr ]]
+++ [[ -z usb:///dev/sdb2 ]]
+++ [[ -z null ]]
+++ [[ -n '' ]]
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.979703542 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.979703542 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.979703542 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.980982520 Including prep/default/040_check_output_scheme.sh
+2017-11-09 08:28:25.981715406 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/default/040_check_output_scheme.sh
+++ [[ -n null ]]
++++ url_scheme null
++++ local url=null
++++ local scheme=null
++++ echo null
++++ grep -q :
++++ echo null
+++ output_scheme=null
+++ case $output_scheme in
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.985529746 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.985529746 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.985529746 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.986774598 Including prep/NETFS/default/040_inspect_configuration_files.sh
+2017-11-09 08:28:25.987502256 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/default/040_inspect_configuration_files.sh
+++ [[ 1 -eq 1 ]]
+++ [[ --anchored == *\ * ]]
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.990099224 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.990099224 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.990099224 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.991366045 Including prep/USB/default/040_set_NETFS_requirements.sh
+2017-11-09 08:28:25.992046107 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/USB/default/040_set_NETFS_requirements.sh
+++ [[ -z usb:///dev/sdb2 ]]
+++ [[ -z null ]]
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:25.994741871 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:25.994741871 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:25.994741871 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:25.996006829 Including prep/NETFS/default/050_check_NETFS_requirements.sh
+2017-11-09 08:28:25.996794621 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/default/050_check_NETFS_requirements.sh
+++ [[ -n usb:///dev/sdb2 ]]
+++ StopIfError 'You must specify either BACKUP_URL or BACKUP_MOUNTCMD and BACKUP_UMOUNTCMD !'
+++ ((  0 != 0  ))
+++ [[ -n usb:///dev/sdb2 ]]
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
+++ local scheme=usb
++++ url_hostname usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local url_without_scheme=/dev/sdb2
++++ local authority_part=
++++ local host_and_port=
++++ echo
+++ local hostname=
++++ url_path usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local url_without_scheme=/dev/sdb2
++++ echo /dev/sdb2
+++ local path=/dev/sdb2
+++ case $scheme in
+++ :
+++ [[ usb = \u\s\b ]]
+++ [[ -z '' ]]
+++ USB_DEVICE=/dev/sdb2
+++ [[ -n '' ]]
+++ Log 'Skipping '\''ping'\'' test for host '\'''\'' in BACKUP_URL '\''usb:///dev/sdb2'\'''
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.001574852 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.001574852 Skipping '\''ping'\'' test for host '\'''\'' in BACKUP_URL '\''usb:///dev/sdb2'\'''
+2017-11-09 08:28:26.001574852 Skipping 'ping' test for host '' in BACKUP_URL 'usb:///dev/sdb2'
+++ case "$(basename $BACKUP_PROG)" in
++++ basename rsync
+++ BACKUP_PROG_SUFFIX=
+++ BACKUP_PROG_COMPRESS_SUFFIX=
+++ PROGS=("${PROGS[@]}" showmount mount.$(url_scheme $BACKUP_URL) umount.$(url_scheme $BACKUP_URL) $( test "$BACKUP_MOUNTCMD" && echo "${BACKUP_MOUNTCMD%% *}" ) $( test "$BACKUP_UMOUNTCMD" && echo "${BACKUP_UMOUNTCMD%% *}" ) $BACKUP_PROG gzip bzip2 xz)
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
++++ test ''
++++ test ''
+++ [[ sshfs = \u\s\b ]]
+++ [[ ftpfs = \u\s\b ]]
+++ MODULES=("${MODULES[@]}" $(url_scheme $BACKUP_URL))
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.008076785 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.008076785 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.008076785 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.009384914 Including prep/default/050_check_keep_old_output_copy_var.sh
+2017-11-09 08:28:26.010136951 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/default/050_check_keep_old_output_copy_var.sh
+++ [[ ! -z '' ]]
+++ [[ -z '' ]]
+++ [[ ! -z '' ]]
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.012793838 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.012793838 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.012793838 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.014077697 Including prep/NETFS/default/060_mount_NETFS_path.sh
+2017-11-09 08:28:26.014822486 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/default/060_mount_NETFS_path.sh
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'
+++ StopIfError 'Could not mkdir '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'''
+++ ((  0 != 0  ))
+++ AddExitTask 'rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'
+++ EXIT_TASKS=("$*" "${EXIT_TASKS[@]}")
+++ Debug 'Added '\''rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'\'' as an exit task'
+++ test 1
+++ Log 'Added '\''rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'\'' as an exit task'
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.018439590 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.018439590 Added '\''rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'\'' as an exit task'
+2017-11-09 08:28:26.018439590 Added 'rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2' as an exit task
+++ [[ -n '' ]]
+++ mount_url usb:///dev/sdb2 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs
+++ local url=usb:///dev/sdb2
+++ local mountpoint=/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs
+++ local defaultoptions=rw,noatime
+++ local options=rw,noatime
+++ local mount_cmd
+++ case $(url_scheme $url) in
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
++++ url_path usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local url_without_scheme=/dev/sdb2
++++ echo /dev/sdb2
+++ mount_cmd='mount -v -o rw,noatime /dev/sdb2 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'
+++ Log 'Mounting with '\''mount -v -o rw,noatime /dev/sdb2 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'''
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.020948251 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.020948251 Mounting with '\''mount -v -o rw,noatime /dev/sdb2 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'''
+2017-11-09 08:28:26.020948251 Mounting with 'mount -v -o rw,noatime /dev/sdb2 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'
+++ eval mount -v -o rw,noatime /dev/sdb2 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs
++++ mount -v -o rw,noatime /dev/sdb2 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs
+mount: /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs does not contain SELinux labels.
+       You just mounted an file system that supports labels which does not
+       contain labels, onto an SELinux box. It is likely that confined
+       applications will generate AVC messages and not be allowed access to
+       this file system.  For more details see restorecon(8) and mount(8).
+mount: /dev/sdb2 mounted on /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs.
+++ StopIfError 'Mount command '\''mount -v -o rw,noatime /dev/sdb2 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' failed.'
+++ ((  0 != 0  ))
+++ AddExitTask 'umount -f -v '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' >&2'
+++ EXIT_TASKS=("$*" "${EXIT_TASKS[@]}")
+++ Debug 'Added '\''umount -f -v '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' >&2'\'' as an exit task'
+++ test 1
+++ Log 'Added '\''umount -f -v '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' >&2'\'' as an exit task'
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.043387706 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.043387706 Added '\''umount -f -v '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' >&2'\'' as an exit task'
+2017-11-09 08:28:26.043387706 Added 'umount -f -v '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs' >&2' as an exit task
+++ return 0
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.044444876 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.044444876 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.044444876 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.045730925 Including prep/USB/default/060_set_usb_device.sh
+2017-11-09 08:28:26.046476419 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/USB/default/060_set_usb_device.sh
+++ [[ -z /dev/sdb2 ]]
+++ test
++++ date +%Y%m%d.%H%M
+++ USB_PREFIX=rear/localhost/20171109.0828
+++ test rear/localhost/20171109.0828
+++ [[ -n usb:///dev/sdb2 ]]
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
+++ local scheme=usb
+++ case $scheme in
+++ NETFS_PREFIX=rear/localhost/20171109.0828
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.052218345 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.052218345 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.052218345 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.053466036 Including prep/NETFS/default/070_set_backup_archive.sh
+2017-11-09 08:28:26.054179066 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/default/070_set_backup_archive.sh
+++ test ''
+++ local backup_file_suffix=
+++ local backup_file_name=backup
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
+++ local scheme=usb
++++ url_path usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local url_without_scheme=/dev/sdb2
++++ echo /dev/sdb2
+++ local path=/dev/sdb2
+++ case "$scheme" in
+++ local backup_directory=/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs/rear/localhost/20171109.0828
+++ test incremental = '' -o differential = ''
+++ backuparchive=/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs/rear/localhost/20171109.0828/backup
+++ LogPrint 'Using backup archive '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs/rear/localhost/20171109.0828/backup'\'''
+++ Log 'Using backup archive '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs/rear/localhost/20171109.0828/backup'\'''
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.059084755 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.059084755 Using backup archive '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs/rear/localhost/20171109.0828/backup'\'''
+2017-11-09 08:28:26.059084755 Using backup archive '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs/rear/localhost/20171109.0828/backup'
+++ Print 'Using backup archive '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs/rear/localhost/20171109.0828/backup'\'''
+++ test 1
+++ echo -e 'Using backup archive '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs/rear/localhost/20171109.0828/backup'\'''
+++ backup_restore_workflows=("recover" "restoreonly")
+++ local backup_restore_workflows
+++ IsInArray mkbackup recover restoreonly
+++ local needle=mkbackup
+++ test -z mkbackup
+++ shift
+++ test mkbackup == recover
+++ shift
+++ test mkbackup == restoreonly
+++ shift
+++ test mkbackup == ''
+++ shift
+++ return 1
+++ return
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.060183437 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.060183437 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.060183437 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.061490522 Including prep/NETFS/default/090_check_encrypted_backup.sh
+2017-11-09 08:28:26.062188870 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/default/090_check_encrypted_backup.sh
+++ is_true 0
+++ case "$1" in
+++ return 1
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.064939722 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.064939722 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.064939722 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.066227569 Including prep/NETFS/default/100_check_nfs_version.sh
+2017-11-09 08:28:26.066974996 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/default/100_check_nfs_version.sh
+++ mount
+++ grep nfs
++++ lsmod
++++ grep nfs
++++ awk '{print $1}'
+++ for module in '$(lsmod|grep nfs|awk '\''{print $1}'\'')'
+++ MODULES=(${MODULES[@]} $module)
+++ for module in '$(lsmod|grep nfs|awk '\''{print $1}'\'')'
+++ MODULES=(${MODULES[@]} $module)
+++ for module in '$(lsmod|grep nfs|awk '\''{print $1}'\'')'
+++ MODULES=(${MODULES[@]} $module)
+++ for module in '$(lsmod|grep nfs|awk '\''{print $1}'\'')'
+++ MODULES=(${MODULES[@]} $module)
+++ for module in '$(lsmod|grep nfs|awk '\''{print $1}'\'')'
+++ MODULES=(${MODULES[@]} $module)
+++ for module in '$(lsmod|grep nfs|awk '\''{print $1}'\'')'
+++ MODULES=(${MODULES[@]} $module)
+++ CLONE_USERS=(${CLONE_USERS[@]} rpcuser)
+++ COPY_AS_IS=(${COPY_AS_IS[@]} /etc/nfsmount.conf /etc/sysconfig/nfs)
++++ find /var/lib/nfs -type d
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var'
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib'
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/gssd
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/gssd'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/gssd/clntXX
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/gssd/clntXX'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/nfsd
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/nfsd'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/cache
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/cache'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/nfsd4_cb
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/nfsd4_cb'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/statd
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/statd'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/portmap
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/portmap'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/nfs
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/nfs'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/mount
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/mount'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/lockd
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/rpc_pipefs/lockd'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/statd
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/statd'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/statd/sm
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/statd/sm'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/statd/sm.bak
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/statd/sm.bak'
+++ for src in '$(find /var/lib/nfs -type d)'
+++ mkdir -p -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/v4recovery
+mkdir: created directory '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/rootfs/var/lib/nfs/v4recovery'
+++ grep -q nfs4 /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/tmp/nfs.mount.info
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.089956610 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.089956610 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.089956610 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.091286050 Including prep/default/100_init_workflow_conf.sh
+2017-11-09 08:28:26.091992542 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/default/100_init_workflow_conf.sh
+++ cat -
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.095383207 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.095383207 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.095383207 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.096653656 Including prep/NETFS/default/150_save_rsync_version.sh
+2017-11-09 08:28:26.097412934 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/default/150_save_rsync_version.sh
+++ case $( basename $BACKUP_PROG ) in
++++ basename rsync
+++ rsync --version
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.101860171 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.101860171 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.101860171 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.103191145 Including prep/GNU/Linux/200_include_getty.sh
+2017-11-09 08:28:26.103955660 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/200_include_getty.sh
+++ pgrep -nx mingetty
+++ pgrep -nx agetty
+++ pgrep -nx getty
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.129586497 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.129586497 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.129586497 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.130960335 Including prep/GNU/Linux/200_include_serial_console.sh
+2017-11-09 08:28:26.131785246 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/200_include_serial_console.sh
+++ [[ -z '' ]]
++++ sort
++++ ls /dev/ttyS0 /dev/ttyS1 /dev/ttyS2 /dev/ttyS3
+++ for devnode in '$(ls /dev/ttyS[0-9]* | sort)'
+++ stty -F /dev/ttyS0
+++ USE_SERIAL_CONSOLE=y
+++ for devnode in '$(ls /dev/ttyS[0-9]* | sort)'
+++ stty -F /dev/ttyS1
+++ for devnode in '$(ls /dev/ttyS[0-9]* | sort)'
+++ stty -F /dev/ttyS2
+++ for devnode in '$(ls /dev/ttyS[0-9]* | sort)'
+++ stty -F /dev/ttyS3
+++ has_binary getty
+++ for bin in '$@'
+++ type getty
+/usr/share/rear/lib/_input-output-functions.sh: line 208: type: getty: not found
+++ return 1
+++ has_binary agetty
+++ for bin in '$@'
+++ type agetty
+++ return 0
+++ GETTY=agetty
+++ REQUIRED_PROGS=("${REQUIRED_PROGS[@]}" "${GETTY}" stty)
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.139189620 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.139189620 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.139189620 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.140662995 Including prep/NETFS/GNU/Linux/200_selinux_in_use.sh
+2017-11-09 08:28:26.141402581 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/GNU/Linux/200_selinux_in_use.sh
+++ [[ -f /selinux/enforce ]]
+++ [[ -f /sys/fs/selinux/enforce ]]
+++ '[' -f /selinux/enforce ']'
+++ '[' -f /sys/fs/selinux/enforce ']'
+++ SELINUX_ENFORCE=/sys/fs/selinux/enforce
+++ is_true 1
+++ case "$1" in
+++ return 0
+++ cat /sys/fs/selinux/enforce
+++ RSYNC_SELINUX=
+++ return
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.145025972 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.145025972 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.145025972 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.146459080 Including prep/NETFS/GNU/Linux/205_inspect_tar_capabilities.sh
+2017-11-09 08:28:26.147236738 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/NETFS/GNU/Linux/205_inspect_tar_capabilities.sh
++++ basename rsync
+++ [[ rsync != \t\a\r ]]
+++ return
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.150848934 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.150848934 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.150848934 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.152124402 Including prep/GNU/Linux/210_include_dhclient.sh
+2017-11-09 08:28:26.152866516 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/210_include_dhclient.sh
+++ DHCLIENT_BIN=
+++ DHCLIENT6_BIN=
+++ define_dhclients_variable
+++ local x
+++ dhclients=()
+++ for x in '"${DHCLIENT_BIN##*/}"' '"${DHCLIENT6_BIN##*/}"' dhcpcd dhclient dhcp6c dhclient6
+++ '[' x == x ']'
+++ continue
+++ for x in '"${DHCLIENT_BIN##*/}"' '"${DHCLIENT6_BIN##*/}"' dhcpcd dhclient dhcp6c dhclient6
+++ '[' x == x ']'
+++ continue
+++ for x in '"${DHCLIENT_BIN##*/}"' '"${DHCLIENT6_BIN##*/}"' dhcpcd dhclient dhcp6c dhclient6
+++ '[' xdhcpcd == x ']'
+++ dhclients=(${dhclients[@]} "$x")
+++ for x in '"${DHCLIENT_BIN##*/}"' '"${DHCLIENT6_BIN##*/}"' dhcpcd dhclient dhcp6c dhclient6
+++ '[' xdhclient == x ']'
+++ for d in '${dhclients[@]}'
+++ '[' xdhcpcd = xdhclient ']'
+++ dhclients=(${dhclients[@]} "$x")
+++ for x in '"${DHCLIENT_BIN##*/}"' '"${DHCLIENT6_BIN##*/}"' dhcpcd dhclient dhcp6c dhclient6
+++ '[' xdhcp6c == x ']'
+++ for d in '${dhclients[@]}'
+++ '[' xdhcpcd = xdhcp6c ']'
+++ for d in '${dhclients[@]}'
+++ '[' xdhclient = xdhcp6c ']'
+++ dhclients=(${dhclients[@]} "$x")
+++ for x in '"${DHCLIENT_BIN##*/}"' '"${DHCLIENT6_BIN##*/}"' dhcpcd dhclient dhcp6c dhclient6
+++ '[' xdhclient6 == x ']'
+++ for d in '${dhclients[@]}'
+++ '[' xdhcpcd = xdhclient6 ']'
+++ for d in '${dhclients[@]}'
+++ '[' xdhclient = xdhclient6 ']'
+++ for d in '${dhclients[@]}'
+++ '[' xdhcp6c = xdhclient6 ']'
+++ dhclients=(${dhclients[@]} "$x")
+++ dhclients='dhcpcd dhclient dhcp6c dhclient6'
+++ dhcp_interfaces_active
+++ local my_dhclients
+++ my_dhclients='dhcpcd dhclient dhcp6c dhclient6'
+++ my_dhclients='dhcpcd|dhclient|dhcp6c|dhclient6'
+++ ps -e
+++ grep -qEs '[ /](dhcpcd|dhclient|dhcp6c|dhclient6)'
+++ '[' 1 -eq 0 ']'
+++ '[' '!' -z '' ']'
+++ '[' '!' -z '' ']'
+++ '[' -z '' ']'
+++ for x in '${dhclients}'
+++ has_binary dhcpcd
+++ for bin in '$@'
+++ type dhcpcd
+/usr/share/rear/lib/_input-output-functions.sh: line 208: type: dhcpcd: not found
+++ return 1
+++ for x in '${dhclients}'
+++ has_binary dhclient
+++ for bin in '$@'
+++ type dhclient
+++ return 0
++++ get_path dhclient
++++ type -P dhclient
+++ define_dhclient_bins /usr/sbin/dhclient
+++ case ${1##*/} in
+++ DHCLIENT_BIN=dhclient
+++ for x in '${dhclients}'
+++ has_binary dhcp6c
+++ for bin in '$@'
+++ type dhcp6c
+/usr/share/rear/lib/_input-output-functions.sh: line 208: type: dhcp6c: not found
+++ return 1
+++ for x in '${dhclients}'
+++ has_binary dhclient6
+++ for bin in '$@'
+++ type dhclient6
+/usr/share/rear/lib/_input-output-functions.sh: line 208: type: dhclient6: not found
+++ return 1
+++ COPY_AS_IS=("${COPY_AS_IS[@]}" "/etc/localtime" "/usr/lib/dhcpcd/*")
+++ PROGS=("${PROGS[@]}" arping ipcalc usleep "${dhclients[@]}")
+++ '[' '!' -z '' ']'
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.167203758 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.167203758 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.167203758 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.168563714 Including prep/GNU/Linux/220_include_lvm_tools.sh
+2017-11-09 08:28:26.169317156 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/220_include_lvm_tools.sh
++++ get_path lvm
++++ type -P lvm
+++ test -c /dev/mapper/control -a -x /usr/sbin/lvm
+++ Log 'Device mapper found enabled. Including LVM tools.'
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.172702220 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.172702220 Device mapper found enabled. Including LVM tools.'
+2017-11-09 08:28:26.172702220 Device mapper found enabled. Including LVM tools.
+++ PROGS=("${PROGS[@]}" lvm dmsetup dmeventd fsadm)
+++ COPY_AS_IS=("${COPY_AS_IS[@]}" /etc/lvm)
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.174022569 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.174022569 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.174022569 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.175334223 Including prep/GNU/Linux/230_include_md_tools.sh
+2017-11-09 08:28:26.176060930 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/230_include_md_tools.sh
+++ grep -q blocks /proc/mdstat
+++ return
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.179426261 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.179426261 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.179426261 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.180670637 Including prep/GNU/Linux/240_include_multipath_tools.sh
+2017-11-09 08:28:26.181394542 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/240_include_multipath_tools.sh
+++ is_true ''
+++ case "$1" in
+++ return 1
+++ return
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.184167226 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.184167226 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.184167226 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.185419630 Including prep/GNU/Linux/280_include_systemd.sh
+2017-11-09 08:28:26.186145765 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/280_include_systemd.sh
+++ ps ax
+++ grep -v grep
+++ grep -q systemd
+++ PROGS=("${PROGS[@]}" systemd agetty systemctl systemd-notify systemd-ask-password systemd-udevd systemd-journald journalctl dbus-uuidgen dbus-daemon dbus-send upstart-udev-bridge)
+++ COPY_AS_IS=("${COPY_AS_IS[@]}" /usr/share/systemd /etc/dbus-1 /usr/lib/systemd/systemd-* /lib/systemd/systemd-* /usr/lib/systemd/network /lib/systemd/network /usr/lib/systemd/system-generators/systemd-getty-generator /lib/systemd/system-generators/systemd-getty-generator)
+++ CLONE_GROUPS=("${CLONE_GROUPS[@]}" input)
+++ Log 'Including systemd (init replacement) tool-set to bootstrap Relax-and-Recover'
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.200439071 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.200439071 Including systemd (init replacement) tool-set to bootstrap Relax-and-Recover'
+2017-11-09 08:28:26.200439071 Including systemd (init replacement) tool-set to bootstrap Relax-and-Recover
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.201349934 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.201349934 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.201349934 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.202677378 Including prep/GNU/Linux/280_include_virtualbox.sh
+2017-11-09 08:28:26.203473807 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/280_include_virtualbox.sh
+++ lsmod
+++ grep -q vbox
+++ VBOX_MODULES=(vboxsf vboxvideo vboxguest)
+++ MODULES=(${MODULES[@]} ${VBOX_MODULES[@]})
+++ CLONE_USERS=(${CLONE_USERS[@]} vboxadd)
+++ CLONE_GROUPS=(${CLONE_GROUPS[@]} vboxusers)
+++ VBOX_COPY_AS_IS=(/etc/init.d/vboxadd* /opt/VBoxGuestAdditions-* /usr/sbin/VBoxService)
+++ COPY_AS_IS=(${COPY_AS_IS[@]} ${VBOX_COPY_AS_IS[@]})
+++ Log 'Adding virtualbox modules'
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.210875759 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.210875759 Adding virtualbox modules'
+2017-11-09 08:28:26.210875759 Adding virtualbox modules
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.211753599 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.211753599 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.211753599 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.213065430 Including prep/GNU/Linux/280_include_vmware_tools.sh
+2017-11-09 08:28:26.213837256 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/280_include_vmware_tools.sh
+++ lsmod
+++ grep -q -E '^vmxnet\b'
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.219740226 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.219740226 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.219740226 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.221020250 Including prep/GNU/Linux/290_include_drbd.sh
+2017-11-09 08:28:26.221794535 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/290_include_drbd.sh
+++ lsmod
+++ grep -q drbd
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.227695240 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.227695240 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.227695240 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.228988270 Including prep/GNU/Linux/300_check_backup_and_output_url.sh
+2017-11-09 08:28:26.229721275 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/300_check_backup_and_output_url.sh
+++ local url=
+++ for url in '"$BACKUP_URL"' '"$OUTPUT_URL"'
+++ test usb:///dev/sdb2
++++ url_scheme usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local scheme=usb
++++ echo usb
++++ grep -q :
++++ echo usb
+++ local scheme=usb
++++ url_host usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local url_without_scheme=/dev/sdb2
++++ local authority_part=
++++ echo
+++ local authority=
++++ url_path usb:///dev/sdb2
++++ local url=usb:///dev/sdb2
++++ local url_without_scheme=/dev/sdb2
++++ echo /dev/sdb2
+++ local path=/dev/sdb2
+++ case "$scheme" in
+++ test ''
+++ test /dev/sdb2
+++ for url in '"$BACKUP_URL"' '"$OUTPUT_URL"'
+++ test null
++++ url_scheme null
++++ local url=null
++++ local scheme=null
++++ echo null
++++ grep -q :
++++ echo null
+++ local scheme=null
++++ url_host null
++++ local url=null
++++ local url_without_scheme=null
++++ local authority_part=null
++++ echo null
+++ local authority=null
++++ url_path null
++++ local url=null
++++ local url_without_scheme=null
++++ echo /null
+++ local path=/null
+++ case "$scheme" in
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.236465575 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.236465575 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.236465575 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.237705373 Including prep/GNU/Linux/300_include_grub_tools.sh
+2017-11-09 08:28:26.238457255 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/300_include_grub_tools.sh
+++ [[ ! -d /var/lib/rear/recovery ]]
++++ ls -d /boot/grub /boot/grub2
+++ grubdir='/boot/grub
+/boot/grub2'
+++ [[ ! -d /boot/grub
+/boot/grub2 ]]
+++ grubdir=/boot/grub
+++ has_binary grub-probe
+++ for bin in '$@'
+++ type grub-probe
+/usr/share/rear/lib/_input-output-functions.sh: line 208: type: grub-probe: not found
+++ return 1
+++ has_binary grub2-probe
+++ for bin in '$@'
+++ type grub2-probe
+++ return 0
+++ grub2-probe -t device /boot/grub
+++ PROGS=("${PROGS[@]}" grub-install grub-mkdevicemap grub-probe grub-set-default grub-mkconfig grub-reboot grub-setup grub-mkimage grub-mkrelpath grub-mkpasswd-pbkdf2 grub2-install grub2-mkdevicemap grub2-probe grub2-set-default grub2-mkconfig grub2-reboot grub2-setup grub2-mkimage grub2-mkrelpath grub2-mkpasswd-pbkdf2 grub-bios-setup grub2-bios-setup)
+++ COPY_AS_IS=("${COPY_AS_IS[@]}" /etc/default/grub /etc/grub.d/* /etc/grub*.cfg /boot/grub* /usr/lib/grub* /usr/share/grub*)
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.245971711 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.245971711 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.245971711 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.247260907 Including prep/GNU/Linux/310_include_cap_utils.sh
+2017-11-09 08:28:26.247973343 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/GNU/Linux/310_include_cap_utils.sh
+++ test No
+++ is_false No
+++ case "$1" in
+++ return 0
+++ return 0
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.250737354 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.250737354 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.250737354 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.252019876 Including prep/default/320_include_uefi_env.sh
+2017-11-09 08:28:26.252758344 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/default/320_include_uefi_env.sh
+++ grep -qw noefi /proc/cmdline
+++ is_false
+++ case "$1" in
+++ return 1
+++ modprobe -q efivars
+++ SYSFS_DIR_EFI_VARS=
+++ [[ -d /sys/firmware/efi/vars ]]
+++ SYSFS_DIR_EFI_VARS=/sys/firmware/efi/vars
+++ grep -qw efivars /proc/mounts
+++ SYSFS_DIR_EFI_VARS=/sys/firmware/efi/efivars
++++ find /boot -maxdepth 1 -iname efi -type d
+++ test /boot/efi
+++ local esp_mount_point=
+++ esp_mount_point='/\/boot\/efi/'
++++ awk '/\/boot\/efi/ { print $3 }' /proc/mounts
+++ UEFI_FS_TYPE=vfat
+++ [[ -z vfat ]]
+++ [[ vfat != \v\f\a\t ]]
+++ USING_UEFI_BOOTLOADER=1
+++ LogPrint 'Using UEFI Boot Loader for Linux (USING_UEFI_BOOTLOADER=1)'
+++ Log 'Using UEFI Boot Loader for Linux (USING_UEFI_BOOTLOADER=1)'
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.260806746 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.260806746 Using UEFI Boot Loader for Linux (USING_UEFI_BOOTLOADER=1)'
+2017-11-09 08:28:26.260806746 Using UEFI Boot Loader for Linux (USING_UEFI_BOOTLOADER=1)
+++ Print 'Using UEFI Boot Loader for Linux (USING_UEFI_BOOTLOADER=1)'
+++ test 1
+++ echo -e 'Using UEFI Boot Loader for Linux (USING_UEFI_BOOTLOADER=1)'
+++ awk '/\/boot\/efi/ { print $1 }' /proc/mounts
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.262692007 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.262692007 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.262692007 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.263951578 Including prep/default/330_include_uefi_tools.sh
+2017-11-09 08:28:26.264733969 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/default/330_include_uefi_tools.sh
+++ is_true 1
+++ case "$1" in
+++ return 0
+++ REQUIRED_PROGS=("${REQUIRED_PROGS[@]}" dosfsck efibootmgr)
+++ PROGS=("${PROGS[@]}" gdisk parted uefivars)
+++ MODULES=("${MODULES[@]}" efivars)
+++ test -f /sbin/elilo
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.268027913 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.268027913 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.268027913 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.269345355 Including prep/USB/Linux-i386/340_find_mbr_bin.sh
+2017-11-09 08:28:26.270116288 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/USB/Linux-i386/340_find_mbr_bin.sh
+++ local mbr_image_file
+++ case "$USB_DEVICE_PARTED_LABEL" in
+++ mbr_image_file=mbr.bin
++++ find_syslinux_file mbr.bin
++++ local syslinux_file=
++++ for file in '/usr/{share,lib,libexec,lib/syslinux}/*/"$1"'
++++ [[ -s /usr/share/syslinux/mbr.bin ]]
++++ syslinux_file=/usr/share/syslinux/mbr.bin
++++ break
++++ echo /usr/share/syslinux/mbr.bin
+++ SYSLINUX_MBR_BIN=/usr/share/syslinux/mbr.bin
+++ [[ -s /usr/share/syslinux/mbr.bin ]]
+++ StopIfError 'Could not find file '\''mbr.bin'\''. Syslinux version 3.08 or newer is required, 4.x prefered!'
+++ ((  0 != 0  ))
++ test 1
++ Debug 'Leaving debugscripts mode (back to previous bash flags and options settings).'
++ test 1
++ Log 'Leaving debugscripts mode (back to previous bash flags and options settings).'
+++ date '+%Y-%m-%d %H:%M:%S.%N '
++ local 'timestamp=2017-11-09 08:28:26.275805168 '
++ test 1 -gt 0
++ echo '2017-11-09 08:28:26.275805168 Leaving debugscripts mode (back to previous bash flags and options settings).'
+2017-11-09 08:28:26.275805168 Leaving debugscripts mode (back to previous bash flags and options settings).
++ apply_bash_flags_and_options_commands 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
++ eval 'set +o xtrace;set +o vi;set +o verbose;set +o privileged;set +o posix;set +o pipefail;set +o physical;set +o onecmd;set +o nounset;set +o notify;set +o nolog;set +o noglob;set +o noexec;set +o noclobber;set +o monitor;set +o keyword;set -o interactive-comments;set +o ignoreeof;set +o history;set +o histexpand;set -o hashall;set +o functrace;set +o errtrace;set +o errexit;set +o emacs;set -o braceexpand;set +o allexport;shopt -u autocd;shopt -u cdable_vars;shopt -u cdspell;shopt -u checkhash;shopt -u checkjobs;shopt -u checkwinsize;shopt -s cmdhist;shopt -u compat31;shopt -u compat32;shopt -u compat40;shopt -u compat41;shopt -u direxpand;shopt -u dirspell;shopt -u dotglob;shopt -u execfail;shopt -u expand_aliases;shopt -u extdebug;shopt -s extglob;shopt -s extquote;shopt -u failglob;shopt -s force_fignore;shopt -u globstar;shopt -u gnu_errfmt;shopt -u histappend;shopt -u histreedit;shopt -u histverify;shopt -s hostcomplete;shopt -u huponexit;shopt -s interactive_comments;shopt -u lastpipe;shopt -u lithist;shopt -u login_shell;shopt -u mailwarn;shopt -u no_empty_cmd_completion;shopt -u nocaseglob;shopt -u nocasematch;shopt -s nullglob;shopt -s progcomp;shopt -s promptvars;shopt -u restricted_shell;shopt -u shift_verbose;shopt -s sourcepath;shopt -u xpg_echo;'
+++ set +o xtrace
+2017-11-09 08:28:26.277128259 Including prep/USB/Linux-i386/350_check_usb_disk.sh
+2017-11-09 08:28:26.277896162 Entering debugscripts mode via 'set -x'.
++ source /usr/share/rear/prep/USB/Linux-i386/350_check_usb_disk.sh
+++ '[' /dev/sdb2 ']'
+++ StopIfError 'USB device ($USB_DEVICE) is not set.'
+++ ((  0 != 0  ))
++++ readlink -f /dev/sdb2
+++ REAL_USB_DEVICE=/dev/sdb2
+++ '[' -b /dev/sdb2 ']'
+++ StopIfError 'USB device '\''/dev/sdb2'\'' is not a block device'
+++ ((  0 != 0  ))
+++ res=($(grep -v $BUILD_DIR /proc/mounts | grep "^$REAL_USB_DEVICE" ))
++++ grep -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO /proc/mounts
++++ grep '^/dev/sdb2'
+++ Error 'USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
+++ LogPrintError 'ERROR: USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
+++ Log 'ERROR: USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++ local 'timestamp=2017-11-09 08:28:26.283049761 '
+++ test 1 -gt 0
+++ echo '2017-11-09 08:28:26.283049761 ERROR: USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
+2017-11-09 08:28:26.283049761 ERROR: USB device '/dev/sdb2' is already mounted on '/run/media/root/REAR-000'
+++ PrintError 'ERROR: USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
+++ echo -e 'ERROR: USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
+++ LogToSyslog 'ERROR: USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
+++ logger -t rear -i 'ERROR: USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
+++ has_binary caller
+++ for bin in '$@'
+++ type caller
+++ return 0
+++ echo '==== Stack trace ===='
+==== Stack trace ====
+++ local c=0
+++ caller 0
+++ :
+++ awk ' { l[NR]=$3":"$1" "$2 }
+                         END { for (i=NR; i>0;) print "Trace "NR-i": "l[i--] }
+++ caller 1
+                       '
+++ :
+++ caller 2
+++ :
+++ caller 3
+++ :
+++ caller 4
+++ :
+++ caller 5
+Trace 0: /usr/sbin/rear:542 main
+Trace 1: /usr/share/rear/lib/mkbackup-workflow.sh:9 WORKFLOW_mkbackup
+Trace 2: /usr/share/rear/lib/framework-functions.sh:95 SourceStage
+Trace 3: /usr/share/rear/lib/framework-functions.sh:49 Source
+Trace 4: /usr/share/rear/prep/USB/Linux-i386/350_check_usb_disk.sh:13 source
+++ echo 'Message: USB device '\''/dev/sdb2'\'' is already mounted on '\''/run/media/root/REAR-000'\'''
+Message: USB device '/dev/sdb2' is already mounted on '/run/media/root/REAR-000'
+++ echo '== End stack trace =='
+== End stack trace ==
+++ kill -USR1 24705
++++ EXIT_FAIL_MESSAGE=0
++++ echo 'Aborting due to an error, check /var/log/rear/rear-localhost.log for details'
++++ kill 24705
++++ DoExitTasks
++++ Log 'Running exit tasks.'
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.286402549 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.286402549 Running exit tasks.'
+2017-11-09 08:28:26.286402549 Running exit tasks.
++++ JOBS=($( jobs -p ))
+++++ jobs -p
++++ test -n ''
++++ for task in '"${EXIT_TASKS[@]}"'
++++ Debug 'Exit task '\''umount -f -v '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' >&2'\'''
++++ test 1
++++ Log 'Exit task '\''umount -f -v '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' >&2'\'''
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.287698310 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.287698310 Exit task '\''umount -f -v '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' >&2'\'''
+2017-11-09 08:28:26.287698310 Exit task 'umount -f -v '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs' >&2'
++++ eval 'umount -f -v '\''/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'\'' >&2'
+++++ umount -f -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs
+umount: /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs (/dev/sdb2) unmounted
++++ for task in '"${EXIT_TASKS[@]}"'
++++ Debug 'Exit task '\''rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'\'''
++++ test 1
++++ Log 'Exit task '\''rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'\'''
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.290244221 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.290244221 Exit task '\''rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'\'''
+2017-11-09 08:28:26.290244221 Exit task 'rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'
++++ eval 'rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs >&2'
+++++ rmdir -v /home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs
+rmdir: removing directory, '/home/backup/tmp/rear.5Jx7GkIFiWy8LjO/outputfs'
++++ for task in '"${EXIT_TASKS[@]}"'
++++ Debug 'Exit task '\''cleanup_build_area_and_end_program'\'''
++++ test 1
++++ Log 'Exit task '\''cleanup_build_area_and_end_program'\'''
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.291972206 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.291972206 Exit task '\''cleanup_build_area_and_end_program'\'''
+2017-11-09 08:28:26.291972206 Exit task 'cleanup_build_area_and_end_program'
++++ eval cleanup_build_area_and_end_program
+++++ cleanup_build_area_and_end_program
+++++ Log 'Finished in 1 seconds'
++++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++++ local 'timestamp=2017-11-09 08:28:26.292927429 '
+++++ test 1 -gt 0
+++++ echo '2017-11-09 08:28:26.292927429 Finished in 1 seconds'
+2017-11-09 08:28:26.292927429 Finished in 1 seconds
+++++ test 1
+++++ LogPrint 'You should also rm -Rf /home/backup/tmp/rear.5Jx7GkIFiWy8LjO'
+++++ Log 'You should also rm -Rf /home/backup/tmp/rear.5Jx7GkIFiWy8LjO'
++++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++++ local 'timestamp=2017-11-09 08:28:26.293894710 '
+++++ test 1 -gt 0
+++++ echo '2017-11-09 08:28:26.293894710 You should also rm -Rf /home/backup/tmp/rear.5Jx7GkIFiWy8LjO'
+2017-11-09 08:28:26.293894710 You should also rm -Rf /home/backup/tmp/rear.5Jx7GkIFiWy8LjO
+++++ Print 'You should also rm -Rf /home/backup/tmp/rear.5Jx7GkIFiWy8LjO'
+++++ test 1
+++++ echo -e 'You should also rm -Rf /home/backup/tmp/rear.5Jx7GkIFiWy8LjO'
+++++ Log 'End of program reached'
++++++ date '+%Y-%m-%d %H:%M:%S.%N '
+++++ local 'timestamp=2017-11-09 08:28:26.294902836 '
+++++ test 1 -gt 0
+++++ echo '2017-11-09 08:28:26.294902836 End of program reached'
+2017-11-09 08:28:26.294902836 End of program reached
++++ for task in '"${EXIT_TASKS[@]}"'
++++ Debug 'Exit task '\''(( EXIT_FAIL_MESSAGE )) && echo '\''rear mkbackup failed, check /var/log/rear/rear-localhost.log for details'\'' 1>&8'\'''
++++ test 1
++++ Log 'Exit task '\''(( EXIT_FAIL_MESSAGE )) && echo '\''rear mkbackup failed, check /var/log/rear/rear-localhost.log for details'\'' 1>&8'\'''
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.295857586 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.295857586 Exit task '\''(( EXIT_FAIL_MESSAGE )) && echo '\''rear mkbackup failed, check /var/log/rear/rear-localhost.log for details'\'' 1>&8'\'''
+2017-11-09 08:28:26.295857586 Exit task '(( EXIT_FAIL_MESSAGE )) && echo 'rear mkbackup failed, check /var/log/rear/rear-localhost.log for details' 1>&8'
++++ eval '(( EXIT_FAIL_MESSAGE )) && echo '\''rear mkbackup failed, check /var/log/rear/rear-localhost.log for details'\'' 1>&8'
+++++ ((  EXIT_FAIL_MESSAGE  ))
++++ for task in '"${EXIT_TASKS[@]}"'
++++ Debug 'Exit task '\''exec 8>&-'\'''
++++ test 1
++++ Log 'Exit task '\''exec 8>&-'\'''
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.296846697 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.296846697 Exit task '\''exec 8>&-'\'''
+2017-11-09 08:28:26.296846697 Exit task 'exec 8>&-'
++++ eval 'exec 8>&-'
+++++ exec
++++ for task in '"${EXIT_TASKS[@]}"'
++++ Debug 'Exit task '\''exec 7>&-'\'''
++++ test 1
++++ Log 'Exit task '\''exec 7>&-'\'''
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.297791002 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.297791002 Exit task '\''exec 7>&-'\'''
+2017-11-09 08:28:26.297791002 Exit task 'exec 7>&-'
++++ eval 'exec 7>&-'
+++++ exec
++++ for task in '"${EXIT_TASKS[@]}"'
++++ Debug 'Exit task '\''exec 6<&-'\'''
++++ test 1
++++ Log 'Exit task '\''exec 6<&-'\'''
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.298723104 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.298723104 Exit task '\''exec 6<&-'\'''
+2017-11-09 08:28:26.298723104 Exit task 'exec 6<&-'
++++ eval 'exec 6<&-'
+++++ exec
++++ for task in '"${EXIT_TASKS[@]}"'
++++ Debug 'Exit task '\'''\'''
++++ test 1
++++ Log 'Exit task '\'''\'''
+++++ date '+%Y-%m-%d %H:%M:%S.%N '
++++ local 'timestamp=2017-11-09 08:28:26.299642446 '
++++ test 1 -gt 0
++++ echo '2017-11-09 08:28:26.299642446 Exit task '\'''\'''
+2017-11-09 08:28:26.299642446 Exit task ''
++++ eval ''
